@@ -1,0 +1,81 @@
+/* Отдельные стили для правовых страниц: старый style.css свёрстан под
+   десктоп с min-width 960px, а эти документы читают с телефона. */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1c2333;
+  background-color: #f7f8fa;
+}
+
+.legal {
+  box-sizing: border-box;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+.legal-back {
+  margin: 0 0 24px;
+  font-size: 15px;
+}
+
+.legal-back a {
+  color: #6b7488;
+  text-decoration: none;
+}
+
+.legal h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  line-height: 1.25;
+  color: #0b1335;
+}
+
+.legal h2 {
+  margin: 32px 0 8px;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #0b1335;
+}
+
+.legal-date {
+  margin: 0 0 8px;
+  color: #6b7488;
+  font-size: 15px;
+}
+
+.legal ul {
+  padding-left: 22px;
+}
+
+.legal li {
+  margin-bottom: 8px;
+}
+
+.legal a {
+  color: #2f4bd1;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #e6e9f2;
+    background-color: #0b1335;
+  }
+
+  .legal h1,
+  .legal h2 {
+    color: #ffffff;
+  }
+
+  .legal-date,
+  .legal-back a {
+    color: #9aa3bd;
+  }
+
+  .legal a {
+    color: #9fb4ff;
+  }
+}
